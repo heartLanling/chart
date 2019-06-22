@@ -98,9 +98,14 @@
         tooltip:{
             trigger:'item',
             formatter:function (params) {
-                let data = params.date;
+                console.log(params);
+                let data = params.data;
+
                 // console.log(params);
-                // return `名字：${data[3]}<br>类型：${data[4]}<br>评分：${data[2]}`
+                return `名字：${data[3]}<br>
+                        类型：${data[4]}<br>
+                        评分：${data[2]}
+                        `
 
             }
         },
