@@ -51,10 +51,9 @@
             name:categorie,
             data:categorie == '全部'?data:movies,
             type:'scatter',
-            // symbolSize: function (data) {
-            //     return Math.ceil(data[3]*10);
-            // },
-
+            symbolSize: function (data) {
+                return Math.ceil(data[2]/10);
+            },
             label:{
                 emphasis:{
                     show :true,
